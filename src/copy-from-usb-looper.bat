@@ -2,7 +2,7 @@
 set DEST=E:\sneakernet_dest
 set USB=F
 
-set STORE="%USB%:\sneakernet\files\"
+set STORE=%USB%:\sneakernet\files
 set RFLAG="%USB%:\sneakernet\usb-flag.txt"
 
 if exist ..\usb-flag.txt goto bad_invocation

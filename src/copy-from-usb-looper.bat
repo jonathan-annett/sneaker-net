@@ -1,5 +1,5 @@
 @echo off
-set DEST=E:\sneakernet_dest
+set DEST=D:\
 set USB=F
 
 set STORE=%USB%:\sneakernet\files

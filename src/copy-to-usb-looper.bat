@@ -1,5 +1,5 @@
 @echo off
-set SRC=P:\slides
+set SRC=D:\
 set USB=F
 
 set STORE=%USB%:\sneakernet\files

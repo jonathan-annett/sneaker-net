@@ -15,3 +15,5 @@ run the appropriate batch files on each computer and move the conveyance usb dis
 
 updated/new files can be quickly transfered from source computer to destination computer by simply inserting disk in each computer
 
+Attribution: uses usb eject code from  [npocmaka/batch.scripts](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/ejectjs.bat) under [MIT licese](https://github.com/npocmaka/batch.scripts/blob/master/LICENSE)
+

@@ -7,9 +7,9 @@ unzip the zip file into the root of a usb drive to set up the file structure nee
 
 copy the src folder to the source computer, and the destination computer
 
-edit the batch copy-to-usb and copy-from-usb files as appropriate:
+edit the batch `copy-to-usb-looper.bat` and `copy-from-usb-looper.bat` files as appropriate:
 
-copy-to-usb-looper.bat: `SRC` and `USB`
+copy-to-usb-looper.bat: `SRC` and `USB` (this runs on source computer)
 ---
 
 ``` bat
@@ -17,7 +17,7 @@ set SRC=D:\
 set USB=F
 ```
 
-copy-from-usb-looper.bat: `DEST` and `USB`
+copy-from-usb-looper.bat: `DEST` and `USB` (this runs on destination computer)
 ---
 
 ``` bat

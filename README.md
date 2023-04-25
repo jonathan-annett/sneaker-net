@@ -60,16 +60,15 @@ what if i put in the wrong usb drive?
 
 one of the things the set-this-pc-as-xxx scripts do is take a note of the disk's serial number, so it won't attempt to copy to or from a disk that isn't there.
 
-if I want to make changes to the scripts?
+customizing the scripts
+---
 
-you can edit the files in src (in the repository, not the usb drive)
-
-if you then run build.cmd, any edits you made in src will be copied to the usb-image folder
+if you edit the files in src (in the repository, not the usb drive),you can then run `build.cmd`, and any edits you made in src will be copied to the usb-image folder
 
 there are 2 main scripts
 
-copy-loop.ps1 is the script that copies the files and ejects the usb
+`copy-loop.ps1` is the script that copies the files and ejects the usb. this is what is placed in the desktop folder on each pc
 
-set-this-pc-as.ps1 is the script that sets up each pc.
+`set-this-pc-as.ps1` is the script that sets up each pc, and is combined with `header-usb-dest.cmd` and `header-usb.source.cmd` are to create the final cmd files that act as installers.
 
-the header-usb-dest.cmd and header-usb.source.cmd are used to create the final cmd files that act as installers.
+`settings.ini` is the default settings file which gets copied to the usb-image/sneakernet/src folder

@@ -67,8 +67,8 @@ if you edit the files in src (in the repository, not the usb drive),you can then
 
 there are 2 main scripts
 
-`copy-loop.ps1` is the script that copies the files and ejects the usb. this is what is placed in the desktop folder on each pc
+`copy-loop.ps1` is the script that runs on each pc. it ends up in the desktop folder.
 
-`set-this-pc-as.ps1` is the script that sets up each pc, and is combined with `header-usb-dest.cmd` and `header-usb.source.cmd` are to create the final cmd files that act as installers.
+`set-this-pc-as.ps1` is the script that sets up each pc, and is combined with `header-usb-dest.cmd` and `header-usb.source.cmd` to create the final cmd files that act as installers.
 
-`settings.ini` is the default settings file which gets copied to the usb-image/sneakernet/src folder
+`settings.ini` is the default settings file which gets copied to the `usb-image/sneakernet/src` folder

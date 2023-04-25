@@ -1,45 +1,35 @@
 sneakernet
 ===
+when the only connection between two computers is your feet, you need sneakernet.
 
-copies files from one computer to another automatically via a usb stick
+<img src ="sneakernet.png">
 
-unzip the zip file into the root of a usb drive to set up the file structure needed for a conveyance usb disk
+one computer is designated the source, and that's the computer that you will always copy files from
 
-copy the src folder to the source computer, and the destination computer
+the other is designated the destination (the computer you will always copy file to)
 
-edit the batch `copy-to-usb-looper.bat` and `copy-from-usb-looper.bat` files as appropriate:
+place the contents of usb-image onto a usb drive.
 
-copy-to-usb-looper.bat: `SRC` and `USB` (this runs on source computer)
----
+If your usb is drive E, you should end up with a folder "E:\sneakernet"
 
-``` bat
-set SRC=D:\
-set USB=F
-```
+edit e:\sneakernet\src\settings.ini to nominate the source and destination folders
 
-copy-from-usb-looper.bat: `DEST` and `USB` (this runs on destination computer)
----
+These are the folders on each computer that will be synced. by default these should both point to D:\
 
-``` bat
-set DEST=D:\
-set USB=F
-```
+Insert the disk into the source computer, and open the sneakernet folder, and run "set-this-pc-as-source.cmd", with adminsitrator privilleges
 
-note: if using a subfolder, don't end with a backlash. for example
+this will create a folder on your desktop called "sneakernet" and a shortcut to a file in that folder
 
-``` bat
-set SRC=D:\MYFILES
-set USB=F
-```
+this inital step will also disable autorun on insert for all usb drives for that computer.
 
-the `USB` variable is the letter of the usb disk. the script validates it by looking for the presence of a flag file under `USB:\sneakernet\usb-flag.txt`, so if you get it wrong all that will happen is the script won
-t detect the usb being inserted.
+you can now press ctrl-alt-s to sync the files in the source folder to the usb
 
-run the appropriate batch files on each computer and move the conveyance usb disk between computers as instructed
+when it's done you should be able to repeat the process on the destination computer, choosing "set-this-pc-as-destination.cmd" to set that computer as the destination
 
-(leave both scripts running)
+ctrl-alt-s on that computer will sync from the usb to the destination folder.
 
-updated/new files can be quickly transfered from source computer to destination computer by simply inserting disk in each computer
+transfering the disk between the two computers and pressing ctrl-alt-s will have the effect of syncing changed or new files to and from the usb
 
-Attribution: uses usb eject code from  [npocmaka/batch.scripts](https://github.com/npocmaka/batch.scripts/blob/master/hybrids/jscript/ejectjs.bat) under [MIT license](https://github.com/npocmaka/batch.scripts/blob/master/LICENSE)
+note that the script takes a note of the usb serial number and will only ever attempt to sync to/from that specific usb.
+
 

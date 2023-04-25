@@ -59,3 +59,17 @@ what if i put in the wrong usb drive?
 ---
 
 one of the things the set-this-pc-as-xxx scripts do is take a note of the disk's serial number, so it won't attempt to copy to or from a disk that isn't there.
+
+if I want to make changes to the scripts?
+
+you can edit the files in src (in the repository, not the usb drive)
+
+if you then run build.cmd, any edits you made in src will be copied to the usb-image folder
+
+there are 2 main scripts
+
+copy-loop.ps1 is the script that copies the files and ejects the usb
+
+set-this-pc-as.ps1 is the script that sets up each pc.
+
+the header-usb-dest.cmd and header-usb.source.cmd are used to create the final cmd files that act as installers.

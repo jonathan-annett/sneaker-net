@@ -1,0 +1,1 @@
+copy /a src/header.cmd + /a src/copy-loop.ps1 usb-image/sneakernet/copy-loop.cmd

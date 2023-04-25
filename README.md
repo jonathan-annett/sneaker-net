@@ -16,7 +16,7 @@ making a usb
 
 To set up a usb copy the contents of the usb-image folder onto a usb drive.
 
-You'll need to download the [repository](https://github.com/jonathan-annett/sneakernet/archive/refs/heads/main.zip) extract the files, and drag the `sneakernet` folder which is inside the `\sneakernet-main\usb-image` folder, onto the usb drive.
+You'll need to download the [repository](https://github.com/jonathan-annett/sneakernet/archive/refs/heads/main.zip), extract the files, and drag the `sneakernet` folder which is inside the `\sneakernet-main\usb-image` folder, onto the usb drive.
 
 If your usb is drive E, you should end up with a folder "E:\sneakernet".
 

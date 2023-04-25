@@ -33,7 +33,7 @@ setting up the `source` computer
 
 Insert the disk into the `source` computer, and open the sneakernet folder, and run "set-this-pc-as-source.cmd", with adminsitrator privilleges
 
-this will create a folder on your desktop called "sneakernet" and a shortcut to a file in that folder
+This will create a folder on your desktop called "sneakernet" and a shortcut to a file in that folder
 
 ***this script will also disable autorun on insert for all usb drives for that computer.***
 

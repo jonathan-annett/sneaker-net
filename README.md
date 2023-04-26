@@ -34,9 +34,9 @@ setting up the `source` computer
 Insert the disk into the `source` computer, and open the sneakernet folder, and run "set-this-pc-as-source.cmd", with adminsitrator privilleges
 
 This will create a folder on your desktop called "sneakernet" and a shortcut to a file in that folder
-
+<!--
 ***this script will also disable autorun on insert for all usb drives for that computer.***
-
+-->
 you can now press ctrl-alt-s to sync the files in the source folder to the usb drive (they will be in sneakernet/files if you want to inspect them)
 
 setting up the `destination` computer
@@ -46,8 +46,9 @@ Insert the disk into the `destination` computer, and open the sneakernet folder,
 
 this will create a folder on your desktop called "sneakernet" and a shortcut to a file in that folder
 
+<!--
 ***this script will also disable autorun on insert for all usb drives for that computer.***
-
+-->
 ctrl-alt-s on that computer will sync from the usb to the destination folder.
 
 updating changes on the source 

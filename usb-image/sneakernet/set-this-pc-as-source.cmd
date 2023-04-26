@@ -98,6 +98,8 @@ if ($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administ
         $Shortcut.Hotkey = "ALT+CTRL+S"
         $Shortcut.Save()
 
+    <# 
+    # add registry keys to disable autorun
         $rkey = Get-Item HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
     
         
@@ -116,6 +118,8 @@ if ($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administ
             New-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer -Name NoAutoRun  -value 1 -type Dword
             #Start-Process powershell -Verb runAs -ArgumentList '-ExecutionPolicy bypass -noexit -Command "New-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer -Name NoAutoRun  -value 1 -type Dword"'
         }
+
+        #>
     }
 
 } else {
